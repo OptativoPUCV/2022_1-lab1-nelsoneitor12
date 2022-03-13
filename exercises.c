@@ -80,8 +80,8 @@ correspondiente para el arreglo con `n` datos
 inicializados en 0 y luego retorna el vector creado.
 */
 typedef struct {
-   int * datos; 
-   int capacidad; 
+   int * datos;  // arreglo dinámico
+   int capacidad; //capacidad del arreglo
 } Vector;
 
 Vector * crearVector(int n) {
