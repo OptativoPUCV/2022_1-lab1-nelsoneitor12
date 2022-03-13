@@ -89,8 +89,8 @@ Vector * crearVector(int n) {
    int i;
    tamano=(Vector*) malloc(n * sizeof(Vector));
    for(i=0;i<n;i++){
-      tamano[i].datos=(Vector*) calloc(n, sizeof(Vector));
-      tamano[i].capacidad=n;
+      (tamano[i].datos)=(Vector*) calloc(n, sizeof(Vector));
+      (tamano[i].capacidad)=n;
    }
    return tamano;
 }
