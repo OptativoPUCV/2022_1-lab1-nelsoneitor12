@@ -60,6 +60,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona datos;
+   Persona *puntero;
    int i;
    for(i=0;i<30;i++){
       datos.nombre[i]=nombre[i];
@@ -68,7 +69,8 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
       datos.rut[i]=rut[i];
    }
    datos.edad=edad;
-   return (*datos);
+   puntero=&datos;
+   return puntero;
 }
 
 /*
@@ -120,7 +122,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
    int i;
-   for(i=0;a->datos[i]!=NULL;i++){
+   for(i=0;(*a).datos[i]!=NULL;i++){
       c->datos[i]=(a->datos[i])+(b->datos[i]);
    }
 }
