@@ -85,7 +85,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector *tamano;
+   Vector *tamano=NULL;
    int i;
    tamano=(Vector*) malloc(n * sizeof(Vector));
    for(i=0;i<n;i++){
