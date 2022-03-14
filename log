@@ -869,3 +869,9 @@ exercises.c:43:22: error: value computed is not used [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0b71fee
+Mon Mar 14 00:31:56 HSP 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+70eec62
