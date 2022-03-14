@@ -834,3 +834,9 @@ exercises.c:71:11: error: function returns address of local variable [-Werror=re
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d577248
+Mon Mar 14 00:25:08 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  6|2
+total_score: 50/70
+4d995e7

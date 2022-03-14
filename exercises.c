@@ -60,15 +60,15 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona datos;
-   //Persona *puntero;
+   Persona *puntero;
    int i;
    strcpy(datos.nombre, nombre);
    for(i=0;i<11;i++){
       datos.rut[i]=rut[i];
    }
    datos.edad=edad;
-   //puntero=&datos;
-   return &datos;
+   puntero=&datos;
+   return puntero;
 }
 
 /*
