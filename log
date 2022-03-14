@@ -858,3 +858,14 @@ Mon Mar 14 00:28:51 HSP 2022:
  tests:  6|2
 total_score: 50/70
 1303c40
+Mon Mar 14 00:31:25 HSP 2022: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaNultimos':
+exercises.c:43:22: error: value computed is not used [-Werror=unused-value]
+   43 |    for(i=n-1;j<m;i++ && j++){
+      |                      ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0b71fee
