@@ -809,3 +809,17 @@ exercises.c:63:13: error: variable 'puntero' set but not used [-Werror=unused-bu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0a4d867
+Mon Mar 14 00:23:36 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crearPersona':
+exercises.c:71:11: error: incompatible types when returning type 'Persona' {aka 'struct <anonymous>'} but 'Persona *' {aka 'struct <anonymous> *'} was expected
+   71 |    return datos;
+      |           ^~~~~
+exercises.c:72:1: error: control reaches end of non-void function [-Werror=return-type]
+   72 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6ee8023
