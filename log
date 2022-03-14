@@ -823,3 +823,14 @@ exercises.c:72:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6ee8023
+Mon Mar 14 00:23:56 HSP 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'crearPersona':
+exercises.c:71:11: error: function returns address of local variable [-Werror=return-local-addr]
+   71 |    return &datos;
+      |           ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d577248

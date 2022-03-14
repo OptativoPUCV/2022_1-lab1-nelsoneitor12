@@ -68,7 +68,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    }
    datos.edad=edad;
    //puntero=&datos;
-   return datos;
+   return &datos;
 }
 
 /*
